@@ -7,14 +7,14 @@ The robot is equipped with a noisy odometer and a noisy color sensor.
 Given a stream of actions and corresponding observations, a Bayes filter is applied 
 to keep track of the robot’s current position.
 
-Sensor Model
-----
+## Models
+
+### Sensor Model
 * z = true observation    with probability 0.9
 * z = false observation   with probability 0.1
 
 
-Action Model
-----
+### Action Model
 * x[t+1] = x[t] + u[t]    with probability 0.9
 * x[t+1] = x[t]           with probability 0.1
 
@@ -23,8 +23,7 @@ that would take it outside the boundaries of the gridworld, the robot remains in
 state with p = 1. Start with a uniform prior on all states. For example if you have a world
 with 4 states (s1,s2,s3,s4) then P(x = s1) = P(x = s2) = P(x = s3) = P(x = s4) = 0.25.
 
-Files
-----
+## Files
 The starter.npz file contains a binary color-map, a sequence of actions, a sequence of
 observations, and a sequence of the correct belief states.
 
