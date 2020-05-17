@@ -28,4 +28,6 @@ Files
 The starter.npz file contains a binary color-map, a sequence of actions, a sequence of
 observations, and a sequence of the correct belief states.
 
-A bayes filter is implemented in the histogram
+A bayes filter is implemented in the histogram_filter.py.
+
+The example_test.py can be used to test the filter.
